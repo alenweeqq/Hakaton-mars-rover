@@ -1,0 +1,4 @@
+﻿mode,median_m,mean_m,min_m,max_m,mean_remaining_energy,mean_flips
+fix_macro_downshift,201.746,220.248,171.222,287.777,0.0,0
+fix_downshift,201.743,215.437,161.007,283.56,0.009,0
+drive,156.721,105.896,1.506,159.461,0.595,0
