@@ -1,0 +1,2 @@
+recursive-include cpp *.cpp *.hpp *.inc
+recursive-include python *.py *.yaml

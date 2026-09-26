@@ -1,0 +1,75 @@
+env:
+  episodes_per_trial: 8
+  debug: true
+
+
+
+  chain_biomes: true
+  chain_zone_count: 14
+  chain_segment_min_length: 30.0
+  chain_segment_max_length: 70.0
+  terrain_surprise_probability: 0.28
+  terrain_surprise_strength: 1.15
+  difficulty_safe_fraction_min: 0.02
+  difficulty_safe_fraction_max: 0.02
+  difficulty_exponent: 0.7125
+  terrain_profile_frequency_growth: 0.75
+
+terrain:
+  sample_count: 111112
+  dx: 0.18
+  base_height: 0.0
+  amplitude: 1.20
+  roughness: 1.00
+  crater_count: 52
+  step_count: 42
+  length: 320.0
+
+physics:
+  dt: 0.016666667
+  gravity: -3.71
+  wheel_friction: 2.2
+  motor_torque: 405.0
+  final_drive_ratio: 5.5
+  engine_inertia: 1.25
+  engine_drag_torque: 12.0
+  clutch_sync_rate: 2800.0
+  shift_energy_base: 0.75
+  shift_energy_sync_per_krpm: 0.32
+  initial_engine_temperature: 20.0
+  cold_start_temperature: -25.0
+  minimum_operating_temperature: -38.0
+  full_power_temperature: 65.0
+  overheat_temperature: 115.0
+  overheat_restart_temperature: 92.0
+  engine_thermal_mass: 8.0
+  engine_idle_heat: 2.2
+  engine_heat_per_fuel: 3.0
+  engine_cooling_conductance: 0.10
+  engine_cooling_airflow: 0.08
+  engine_heater_energy_rate: 0.15
+  engine_heater_heat: 42.0
+  initial_energy: 100.0
+  energy_capacity: 130.0
+  panel_deploy_time: 4.0
+  panel_retract_time: 3.0
+  brake_strength: 80.0
+  body_tilt_torque: 12.0
+  linear_damping: 0.005
+  angular_damping: 0.018
+
+termination:
+  finish_x: 700.0
+  max_steps: 0
+  trial_time_limit: 300.0
+  flip_angle: 2.45
+  min_energy: 0.0
+  stuck_steps: 600
+
+reward:
+  progress_scale: 1.0
+  energy_cost_scale: 0.01
+  flip_penalty: 5.0
+  stuck_penalty: 0.05
+  hard_contact_penalty: 0.2
+  finish_bonus: 100.0

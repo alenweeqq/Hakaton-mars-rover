@@ -1,0 +1,13 @@
+.git
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+build
+build-*
+dist
+artifacts
+runs
+gui/build
+gui/dist

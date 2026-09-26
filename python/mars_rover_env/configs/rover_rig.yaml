@@ -1,0 +1,29 @@
+rover:
+  body:
+    mass: 18.0
+    inertia: 6.0
+    size: [1.8, 0.5]
+    collision:
+      type: box
+      size: [1.8, 0.5]
+    local_position: [0.0, 0.0]
+
+  wheels:
+    - radius: 0.24
+      mass: 1.4
+      local_anchor: [0.65, -0.30]
+      suspension:
+        rest_length: 0.28
+        min_length: 0.18
+        max_length: 0.36
+        stiffness: 360.0
+        damping: 36.0
+    - radius: 0.24
+      mass: 1.4
+      local_anchor: [-0.65, -0.30]
+      suspension:
+        rest_length: 0.28
+        min_length: 0.18
+        max_length: 0.36
+        stiffness: 360.0
+        damping: 36.0

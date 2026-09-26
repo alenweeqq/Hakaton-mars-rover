@@ -1,0 +1,13 @@
+build/
+*.so
+*.py[cod]
+__pycache__/
+*.egg-info/
+submission.zip
+
+.venv/
+venv/
+.idea/
+*.egg-info/
+dist/
+.vscode/

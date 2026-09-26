@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mars-rover-student-gui"
+version = "0.16.0"
+requires-python = ">=3.10"
+dependencies = ["mars-rover-env==0.16.0", "pillow>=10"]
+
+[project.scripts]
+mars-rover-play = "mars_rover_gui.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
